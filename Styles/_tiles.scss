@@ -1,0 +1,56 @@
+@use 'base' as *;
+
+.tile{
+    width: 100px;
+    height: 100px;
+	@include flexCenter;
+    font-size: 2.5em;
+    border-radius: 7.5px;
+	color: #fff;
+	position: absolute;
+	transition: transform 0.5s;
+	cursor: default;
+}
+
+.box{
+	.tile2{
+		background-color: #eee4da;
+		color: #756462;
+	}
+	.tile4{
+		background-color: #ebd8b6;
+		color: #756462;
+	}
+	.tile8{
+		background-color: #f2b076;
+	}
+	.tile16{
+		background-color: #f69360;
+	}
+	.tile32{
+		background-color: #f77f63;
+	}
+	.tile64{
+		background-color: #f76544;
+	}
+	.tile128{
+		background-color: #f1d164;
+		font-size: 2.3rem;
+	}
+	.tile256{
+		background-color: #f2d260;
+		font-size: 2.3rem;
+	}
+	.tile512{
+		background-color: #f5d356;
+		font-size: 2.3rem;
+	}
+	.tile1024{
+		background-color: #f8d236;
+		font-size: 2.2rem;
+	}
+	.tile2048{
+		background-color: #ecc402;
+		font-size: 2.2rem;
+	}
+}

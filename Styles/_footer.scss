@@ -1,0 +1,12 @@
+@use 'base' as *;
+
+footer{
+    height: 50px;
+    @include flexCenter;
+
+    p{
+        color: #c0bbb1;
+        font-size: 12.5px;
+        cursor: default;
+    }
+}

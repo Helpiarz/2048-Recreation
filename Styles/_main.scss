@@ -1,0 +1,29 @@
+@use 'base' as *;
+
+main{
+    height: 700px;
+    @include flexCenter;
+    align-items: flex-start;
+    flex: 1;
+
+    .field{
+        margin-top: 50px;
+        background-color: #9b897a;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 12.5px;
+        padding: 12.5px;
+        border-radius: 15px;
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #bdac97;
+            border-radius: 7.5px;
+            border: 1px solid #938370;
+            @include flexCenter;
+        }
+    }
+}
+

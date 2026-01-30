@@ -1,0 +1,93 @@
+@use 'base' as *;
+
+header{
+    @include flexCenter(space-between);
+    position: relative;
+    height: 150px;
+    padding: 0 10%;
+
+    *{
+        @include flexCenter;
+    }
+}
+
+.dropdown-menu{
+    height: 60px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.15s;
+
+    p{  
+        font-size: 3rem;    
+        margin-left: 10px;  
+    }
+    i{  
+        font-size: 1.5rem;  
+    }
+
+    &:hover{
+        background-color: #e0dad1;  
+    }
+    &:active{
+        background-color: #d1c8bb;  
+    }
+}
+
+.score-boxes{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    @include flexCenter(space-between);
+
+    .score-box{
+        width: 45%;
+        height: 50%;
+        flex-direction: column;
+        cursor: default;
+        border-radius: 10px;
+
+        .score-title{
+            font-size: 0.8rem;
+        }
+        .score-amount{
+            font-size: 1.25rem;
+        }
+    }
+
+    .score{
+        background-color: #eae7d9;
+    }
+    .best{
+        border: solid 2px #eae7d9;
+    }
+}
+
+.additionals{
+    height: 100%;
+    width: 200px;
+
+    button{
+        width: 110px;
+        height: 50px;
+        font-size: 1rem;
+        background-color: #988877;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: 0.15s;
+
+        &:hover{
+            background-color: #8d7e6e;
+        }
+        &:active{
+            background-color: #776a5d;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+# Notes
+notes.txt
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# SASS
+.sass-cache/

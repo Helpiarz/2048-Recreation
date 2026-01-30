@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #756452;
+  user-select: none;
+}
+
+body {
+  height: 1vh;
+  background-color: #faf8f0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 150px;
+  padding: 0 10%;
+}
+header * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu {
+  height: 60px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.dropdown-menu p {
+  font-size: 3rem;
+  margin-left: 10px;
+}
+.dropdown-menu i {
+  font-size: 1.5rem;
+}
+.dropdown-menu:hover {
+  background-color: #e0dad1;
+}
+.dropdown-menu:active {
+  background-color: #d1c8bb;
+}
+
+.score-boxes {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.score-boxes .score-box {
+  width: 45%;
+  height: 50%;
+  flex-direction: column;
+  cursor: default;
+  border-radius: 10px;
+}
+.score-boxes .score-box .score-title {
+  font-size: 0.8rem;
+}
+.score-boxes .score-box .score-amount {
+  font-size: 1.25rem;
+}
+.score-boxes .score {
+  background-color: #eae7d9;
+}
+.score-boxes .best {
+  border: solid 2px #eae7d9;
+}
+
+.additionals {
+  height: 100%;
+  width: 200px;
+}
+.additionals button {
+  width: 110px;
+  height: 50px;
+  font-size: 1rem;
+  background-color: #988877;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.additionals button:hover {
+  background-color: #8d7e6e;
+}
+.additionals button:active {
+  background-color: #776a5d;
+}
+
+main {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex: 1;
+}
+main .field {
+  margin-top: 50px;
+  background-color: #9b897a;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 12.5px;
+  padding: 12.5px;
+  border-radius: 15px;
+}
+main .field .box {
+  width: 100px;
+  height: 100px;
+  background-color: #bdac97;
+  border-radius: 7.5px;
+  border: 1px solid #938370;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  border-radius: 7.5px;
+  color: #fff;
+  position: absolute;
+  transition: transform 0.5s;
+  cursor: default;
+}
+
+.box .tile2 {
+  background-color: #eee4da;
+  color: #756462;
+}
+.box .tile4 {
+  background-color: #ebd8b6;
+  color: #756462;
+}
+.box .tile8 {
+  background-color: #f2b076;
+}
+.box .tile16 {
+  background-color: #f69360;
+}
+.box .tile32 {
+  background-color: #f77f63;
+}
+.box .tile64 {
+  background-color: #f76544;
+}
+.box .tile128 {
+  background-color: #f1d164;
+  font-size: 2.3rem;
+}
+.box .tile256 {
+  background-color: #f2d260;
+  font-size: 2.3rem;
+}
+.box .tile512 {
+  background-color: #f5d356;
+  font-size: 2.3rem;
+}
+.box .tile1024 {
+  background-color: #f8d236;
+  font-size: 2.2rem;
+}
+.box .tile2048 {
+  background-color: #ecc402;
+  font-size: 2.2rem;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #c0bbb1;
+  font-size: 12.5px;
+  cursor: default;
+}
